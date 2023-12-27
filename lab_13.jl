@@ -1,5 +1,5 @@
 function lab_13(r::Robot)
-    for i in ((North, East), (North, West), (South, East), (South, West))
+    for i in ((Nord, East), (Nord, West), (South, East), (South, West))
         go_special!(r, i)
         return_special!(r, i)
     end
