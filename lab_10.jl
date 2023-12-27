@@ -6,12 +6,12 @@ function lab_10(r::Robot)
     local_ans += temperature(r)
     println("temperature here is " * string(temperature(r)))
 
-    while !isborder(r,North)
+    while !isborder(r,Nord)
         while !isborder(r,side) 
             local_ans += special_move(r, side)
             field_size += 1
         end
-        local_ans += special_move(r, North)
+        local_ans += special_move(r, Nord)
         
         field_size += 1
         side=inverse_side(side)
